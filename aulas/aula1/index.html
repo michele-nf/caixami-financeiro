@@ -1,0 +1,47 @@
+<html>
+    <script>
+        salarioJaneiro = 3000   
+        aluguelJaneiro = 1000
+        contaDeAguaJaneiro = 200
+        contaDeLuzJaneiro = 100
+        internetJaneiro = 100
+        transporteJaneiro = 300
+        lazerJaneiro = 300
+        alimentacaoJaneiro = 500
+        saldoJaneiro = (salarioJaneiro - aluguelJaneiro - contaDeAguaJaneiro - contaDeLuzJaneiro - internetJaneiro - transporteJaneiro - lazerJaneiro - alimentacaoJaneiro)
+
+        estaNegativoJaneiro = saldoJaneiro < 0
+        if (estaNegativoJaneiro) {
+            jurosJaneiro = saldoJaneiro * 0.1
+            saldoJaneiro = saldoJaneiro + jurosJaneiro
+        } else {
+            rendimentosJaneiro = saldoJaneiro * 0.005
+            saldoJaneiro = saldoJaneiro + rendimentosJaneiro
+        }
+        console.log('Saldo Janeiro =', saldoJaneiro)
+
+        salarioFevereiro = 3000
+        aluguelFevereiro = 1200
+        contaDeAguaFevereiro = 250 
+        contaDeLuzFevereiro = 100
+        internetFevereiro = 100
+        transporteFevereiro = 500
+        lazerFevereiro = 0
+        alimentacaoFevereiro = 1000
+        saldoFevereiro = (salarioFevereiro - aluguelFevereiro - contaDeAguaFevereiro - contaDeLuzFevereiro - internetFevereiro - transporteFevereiro - lazerFevereiro - alimentacaoFevereiro)
+        
+        estaNegativoFevereiro = saldoFevereiro < 0
+        if (estaNegativoFevereiro) {
+            jurosFevereiro = saldoFevereiro * 0.1
+            saldoFevereiro = saldoFevereiro + jurosFevereiro
+        } else {
+            rendimentosJaneiro = saldoJaneiro * 0.005
+            saldoJaneiro = saldoJaneiro + rendimentosJaneiro
+        }
+        console.log('Saldo Fevereiro =', saldoFevereiro)
+
+        acumuladoAno = saldoJaneiro + saldoFevereiro
+        console.log('Acumulado 2024 =', acumuladoAno);
+
+    </script>
+</html>
